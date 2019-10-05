@@ -13,5 +13,15 @@
  */
 
 export default function convertBytesToHuman(bytes) {
-  // your solution goes here
+  var prefixes = ['', 'K', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y']; // prifeixes for byte(B)
+  var N = prefixes.length - 1;// max number of prefix
+  if(bytes>=0 && typeof(bytes)=='number' && bytes < Infinity)
+  {
+    var i = 0; //number of prefix
+    for(;i<N && bytes>=1024; i++, bytes/=1024){}// got number of prefix and not rounded number
+    bytes = (Math.round(bytes)==bytes? bytes.toString() : bytes.toFixed(2)) + ' '+ prefixes[i] +'B'; // result string
+  }
+  else
+    bytes = false; // wrong input
+  return bytes;
 }
