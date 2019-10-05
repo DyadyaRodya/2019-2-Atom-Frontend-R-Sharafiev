@@ -18,7 +18,9 @@ correctSentence("Greetings, friends.") == "Greetings, friends."
  */
 
 export default function correctSentence(text) {
-  if(text)  // check if it isn't empty
-    text = text[0].toUpperCase() + text.slice(1) + (text.slice(-1)=='.'?'':'.');
+  if(typeof text == 'string' && text.length)  // check if it is string and isn't empty
+    text = text[0].toUpperCase() + text.slice(1) + (text.slice(-1)=='.'?'':'.'); // first letter in upper case and if last is not dot then add it
+  else
+    text = ''; // wrong input
   return text;
 }
