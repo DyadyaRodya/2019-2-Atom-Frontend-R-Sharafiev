@@ -25,6 +25,26 @@ nonUniqueElements([10, 9, 10, 10, 9, 8]) == [10, 9, 10, 10, 9]
  */
 
 export default function nonUniqueElements(data) {
-  // your solution goes here
+  var i = 0; // number of element which I view
+  while(i< data.length)
+  {
+    var j = 0; // number of element with which I compare
+    var canBeDaleted = true; // flag: for unique true, for non unique false
+    while (j < data.length)
+    {
+      if (i == j)
+        j++;
+      if (data[i] == data[j])
+      {
+        canBeDaleted = false; // found the same element
+        break;
+      }
+      j++;
+    }
+    if(canBeDaleted) 
+      data.splice(i,1); // it was unique
+    else
+      i++;
+  }
   return data
 }
