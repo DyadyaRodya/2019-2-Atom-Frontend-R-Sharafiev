@@ -4,14 +4,14 @@ template.innerHTML = `
   :host{
     width: 100%;
     height: 100%;
-    background-color: #f0e9e9;
+    background-color: #c4eff2;
     background-size: 50px;
     display: flex;
     flex-direction: column;
   }
 
   .header{
-    background-color: #8E24AA;
+    background-color: #FB8C01;
     width: 100%;
     z-index: 1;
     box-shadow: 0 0 2px 0 #151716;
