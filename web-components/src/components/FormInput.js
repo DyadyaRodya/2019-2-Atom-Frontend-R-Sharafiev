@@ -53,43 +53,43 @@ template.innerHTML = `
 `;
 
 class FormInput extends HTMLElement {
-    constructor () {
-        super();
-        this._shadowRoot = this.attachShadow({ mode: 'open' });
-        this._shadowRoot.appendChild(template.content.cloneNode(true));
+  constructor() {
+    super();
+    this.shadowRoot = this.attachShadow({ mode: 'open' });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-        this.$input = this.shadowRoot.querySelector('input');
-        this.$sendButton = this.shadowRoot.querySelector('.sendButton');
-        this.$clipButton = this.shadowRoot.querySelector('.clipButton');
-        this.$sendButton.addEventListener('click', this.onSubmit.bind(this));
-        this.$clipButton.addEventListener('click', this.onclipButton.bind(this));
-        this.$input.addEventListener('keypress', this.onKeyPress.bind(this));
-    }
+    this.$input = this.shadowRoot.querySelector('input');
+    this.$sendButton = this.shadowRoot.querySelector('.sendButton');
+    this.$clipButton = this.shadowRoot.querySelector('.clipButton');
+    this.$sendButton.addEventListener('click', this.onSubmit.bind(this));
+    this.$clipButton.addEventListener('click', this.onclipButton.bind(this));
+    this.$input.addEventListener('keypress', this.onKeyPress.bind(this));
+  }
 
-    onSubmit() {
-        this.dispatchEvent(new Event('onSubmit'));
-    }
+  onSubmit() {
+    this.dispatchEvent(new Event('onSubmit'));
+  }
 
-    onclipButton() {
-        this.dispatchEvent(new Event('clickclipButton'));
-    }
+  onclipButton() {
+    this.dispatchEvent(new Event('clickclipButton'));
+  }
 
-    onKeyPress(event) {
-        if (event.keyCode === 13) this.onSubmit();
-    }
+  onKeyPress(event) {
+    if (event.keyCode === 13) this.onSubmit();
+  }
 
-    static get observedAttributes() {
-        return ['name', 'value', 'placeholder', 'disabled'];
-    }
+  static get observedAttributes() {
+    return ['name', 'value', 'placeholder', 'disabled'];
+  }
 
-    attributeChangedCallback(name, oldValue, newValue) {
-        if (name === 'value') this.$input.value = newValue;
-        this.$input.setAttribute(name, newValue);
-    }
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'value') this.$input.value = newValue;
+    this.$input.setAttribute(name, newValue);
+  }
 
-    get value() {
-        return this.$input.value;
-    }
+  get value() {
+    return this.$input.value;
+  }
 }
 
 customElements.define('form-input', FormInput);

@@ -17,7 +17,7 @@ template.innerHTML = `
   }
   .headerButton:active{
     opacity: 0.6;
-
+  }
   .nameContainer{
     flex: auto;
     height: 100%;
@@ -64,7 +64,7 @@ template.innerHTML = `
     opacity: 0.25;
     transition-duration: 0.15s;
   }
-  }
+  
 </style>
 <div class="headerButton backButton"></div>
 <div class="nameContainer">
