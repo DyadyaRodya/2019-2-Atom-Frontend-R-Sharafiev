@@ -21,7 +21,7 @@ template.innerHTML = `
   }
   .self{
     float: right;
-    background-color: #f9c5fa !important;
+    background-color: #857bf2 !important;
     color: #77787A !important;
     border-width:1px;
     border-style: solid;
