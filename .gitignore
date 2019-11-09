@@ -146,4 +146,4 @@ docs/_book/
 jest_*/
 .jscpd/
 
-*/package-lock.json/*
+package-lock.json
