@@ -7,6 +7,6 @@ import './components/MessageForm';
 
 import './components/ChatList';
 import './components/DialogModel';
-import './components/WrapperElement';
+import './components/WrapperComponent';
 
 import './components/initExamp';

@@ -1,6 +1,6 @@
 if (localStorage.getItem('chatList') === null) {
   localStorage.setItem('chatList', JSON.stringify([0, 1]));
-  
+
   localStorage.setItem('dialogID_0', JSON.stringify({
     0: {
       text: 'read',
@@ -9,7 +9,7 @@ if (localStorage.getItem('chatList') === null) {
       status: 'read',
     },
   }));
-  
+
   localStorage.setItem('dialogID_1', JSON.stringify({
     0: {
       text: 'not read',
@@ -18,4 +18,4 @@ if (localStorage.getItem('chatList') === null) {
       status: 'new',
     },
   }));
-  }
+}
