@@ -60,16 +60,15 @@ template.innerHTML = `
     flex-grow: 0;
   }
   .sending{
-    background: url(https://www.drupal.org/files/issues/throbber_12.gif) no-repeat center center;
+    background: url(https://image.flaticon.com/icons/svg/19/19973.svg) no-repeat center center;
     background-size: 18px;
   }
   .sent{
     background: url(https://www.freeiconspng.com/uploads/blue-tick-icon-1.png) no-repeat center center;
     background-size: 18px;
-    background-color: #fcf2f2;
   }
   .read{
-    background: url(https://www.clipartmax.com/png/middle/28-289588_whatsapp-double-ticks-clip-art-at-clker-double-check-whatsapp-png.png);
+    background: url(https://www.freeiconspng.com/uploads/blue-tick-icon-1.png);
     background-size: 18px;
   }
   .newMessages{

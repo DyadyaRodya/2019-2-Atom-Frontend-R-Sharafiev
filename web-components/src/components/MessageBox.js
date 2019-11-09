@@ -17,7 +17,7 @@ template.innerHTML = `
     width: 100%;
     text-align: right;
     margin-top: 5px;
-    color: #000000;
+    color: #ee4433;
   }
   .self{
     float: right;
