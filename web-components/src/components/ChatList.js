@@ -8,6 +8,7 @@ template.innerHTML = `
     flex-direction: column;
     align-content: flex-end;
     position: relative;
+    background-color: #c4eff2;
   }
   .header{
     background-color: #FB8C01;
