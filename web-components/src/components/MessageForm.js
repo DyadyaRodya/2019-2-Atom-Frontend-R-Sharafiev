@@ -75,7 +75,7 @@ class MessageForm extends HTMLElement {
   }
 
   renderPrevMessages() {
-    let dstr = localStorage.getItem(`dialogID_${this.dialogID}`);
+    const dstr = localStorage.getItem(`dialogID_${this.dialogID}`);
     if (dstr == null) { return false; }
     const dialogInfo = JSON.parse(dstr);
     if (dialogInfo == null) { return false; }

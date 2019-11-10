@@ -48,15 +48,25 @@ class WrapperComponent extends HTMLElement {
 
   loadDialog() {
     let chatList = [];
-    chatList = JSON.parse(localStorage.getItem('chatList'));
+    const chstr = localStorage.getItem('chatList');
+    if (chstr != null) {
+      chatList = JSON.parse(chstr);
+    }
+    if (chatList == null) { chatList = []; }
 
     if (chatList != null && chatList.length) { this.$chatList.$content.innerHTML = ''; }
 
     let lastTime = 0;
 
     for (const dialogID of Object.keys(chatList)) {
-      let messageList = JSON.parse(localStorage.getItem(`dialogID_${dialogID}`));
-      if (messageList === null) { messageList = {}; }
+      const dstr = localStorage.getItem(`dialogID_${dialogID}`);
+      let messageList = {};
+      if (dstr != null) {
+        messageList = JSON.parse(dstr);
+        if (messageList === null) { messageList = {}; }
+      } else {
+        messageList = {};
+      }
 
       const lastMessageID = Math.max(...Object.keys(messageList));
 
@@ -105,8 +115,11 @@ class WrapperComponent extends HTMLElement {
     this.$chatForm.$input.clearInput();
 
     let messageList = {};
-    messageList = JSON.parse(localStorage.getItem(`dialogID_${dialogID}`));
-    if (messageList === null) messageList = {};
+    const dstr = localStorage.getItem(`dialogID_${dialogID}`);
+    if (dstr != null) {
+      messageList = JSON.parse(dstr);
+      if (messageList === null) messageList = {};
+    } else messageList = {};
 
     let lastMessageID = Math.max(...Object.keys(messageList));
 
@@ -131,7 +144,8 @@ class WrapperComponent extends HTMLElement {
     if (this.addedEvent === undefined) { this.addedEvent = []; }
 
     let chatList = [];
-    chatList = JSON.parse(localStorage.getItem('chatList'));
+    const chstr = localStorage.getItem('chatList');
+    if (chstr != null) { chatList = JSON.parse(chstr); }
 
     chatList.forEach((dialogID) => {
       if (!(dialogID in this.addedEvent)) {
