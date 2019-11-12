@@ -84,6 +84,26 @@ class DialogInfo extends HTMLElement {
     super();
     this.shadowRoot = this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+    this.$backButton = this.shadowRoot.querySelector('.backButton');
+    this.$searchButton = this.shadowRoot.querySelector('.searchButton');
+    this.$optionButton = this.shadowRoot.querySelector('.optionsButton');
+
+    this.$backButton.addEventListener('click', this.backButton.bind(this));
+    this.$searchButton.addEventListener('click', this.searchButton.bind(this));
+    this.$optionButton.addEventListener('click', this.optionButton.bind(this));
+  }
+
+  backButton() {
+    this.dispatchEvent(new Event('clickBackButton'));
+  }
+
+  searchButton() {
+    this.dispatchEvent(new Event('clickSearchButton'));
+  }
+
+  optionButton() {
+    this.dispatchEvent(new Event('clickOptionButton'));
   }
 }
 

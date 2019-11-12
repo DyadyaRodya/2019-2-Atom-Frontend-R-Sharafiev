@@ -17,18 +17,18 @@ template.innerHTML = `
     width: 100%;
     text-align: right;
     margin-top: 5px;
-    color: #000000;
+    color: #ee4433;
   }
   .self{
     float: right;
     background-color: #857bf2 !important;
-    color: #77787A !important;
+    color: black !important;
     border-width:1px;
     border-style: solid;
     border-image: linear-gradient(135deg, #e0dcdc, #e3e1e1) 1 2;
   }
   .self .time{
-    color: #77787A !important;
+    color: #EEEEEE !important;
   }
   .self:after{
     clear: both;
