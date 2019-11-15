@@ -39,6 +39,24 @@ template.innerHTML = `
     align-content: flex-end;
   }
 
+  message-box.newBox{
+    animation-name: messageAppearing;
+    animation-duration: 1s;
+  }
+
+  @keyframes messageAppearing{
+    from{
+      max-height: 0;
+      opacity: 0;
+      padding 0 0 0 0;
+    }
+    to{
+      max-height: 100%;
+      opacity: 1;
+      padding: 0 10px 20px 10px;
+    }
+  }
+
   message-box{
     box-sizing: border-box;
     width: 100%;
@@ -87,12 +105,13 @@ class MessageForm extends HTMLElement {
     }
   }
 
-  renderMessage(messageID, messageBox) {
+  renderMessage(messageID, messageBox, newMessage = false) {
     let elem = document.createElement('message-box');
     elem = this.$messages.appendChild(elem);
     for (const [attr, value] of Object.entries(messageBox)) {
       elem.setAttribute(attr.toLowerCase(), value);
     }
+    if (newMessage) { elem.classList.add('newBox'); }
   }
 
   static get observedAttributes() {
