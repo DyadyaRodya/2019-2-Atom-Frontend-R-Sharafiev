@@ -60,6 +60,7 @@ template.innerHTML = `
     overflow-y: auto; 
   }
   .buttonNew{
+    animation: pulse 3s infinite;
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -71,9 +72,19 @@ template.innerHTML = `
     transition-duration: 0.4s;
     cursor: pointer;
   }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 30px rgba(204,169,44, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
   .buttonNew:hover{
     opacity: 1.0;
-    animation: none;
   }
   .pen{
     background: url(https://cdn0.iconfinder.com/data/icons/email-7/100/Minio_Email_Bold-82-512.png) no-repeat center center;
