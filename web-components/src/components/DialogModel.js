@@ -15,10 +15,10 @@ template.innerHTML = `
     transition-duration: 0.2s;
   }
   .dialog{
-    background-color: #c0e9ea;
+    background-color: #c0c9ea;
   }
   .dialog:hover{
-    background-color: #bfe1e5;
+    background-color: #bfb9e5;
   }
   .dialogAvatar{
     width: 70px;

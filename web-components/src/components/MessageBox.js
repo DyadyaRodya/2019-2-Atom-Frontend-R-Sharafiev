@@ -6,7 +6,7 @@ template.innerHTML = `
   }
   .messageBox{
     display: inline-block;
-    background-color: #97f0eb;
+    background-color: #97d0eb;
     
     padding: 10px;
     text-align: justify;
