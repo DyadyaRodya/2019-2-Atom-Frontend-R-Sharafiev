@@ -35,7 +35,12 @@
 	"globals": {
 		"DEBUG": false
 	},
-	"rules": {
+		"rules": {
+		"react/destructuring-assignment": 0,
+		"react/forbid-prop-types": 0,
+		"react/display-name": 0,
+		"jsx-a11y/interactive-supports-focus": 0,
+		"jsx-a11y/click-events-have-key-events": 0,
 		"import/no-named-as-default": 0,
 		"react/jsx-filename-extension": [
 			1,
@@ -49,9 +54,6 @@
 		"import/prefer-default-export": 0,
 		"import/first": 0,
 		"indent": ["error", "tab", { "SwitchCase": 1 }],
-		"no-tabs": ["error", { "allowIndentationTabs": true }],
-		"semi": ["error", "always"],
-		"quotes": ["error", "single"],
-		"no-mixed-spaces-and-tabs": "error"
+		"no-tabs": ["error", { "allowIndentationTabs": true }]
 	}
 }

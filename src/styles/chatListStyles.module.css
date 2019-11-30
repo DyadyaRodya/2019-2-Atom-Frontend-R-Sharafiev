@@ -1,0 +1,47 @@
+.chats_list {
+  display: flex;
+  flex-direction: column;
+  height: 91vh;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 0;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  background-color: rgb(196, 239, 242);
+}
+
+.create_chat {
+  animation: pulse 3s infinite;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.75;
+  border-radius: 60px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background: url('https://cdn0.iconfinder.com/data/icons/email-7/100/Minio_Email_Bold-82-512.png') no-repeat center center;
+  background-size: 30px;
+  z-index: 1;
+  margin: auto;
+}
+.create_chat:hover {
+  opacity: 1.0;
+}
+.create_chat:active {
+  background: rgb(51, 153, 204);
+  border-radius: 30px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
