@@ -7,23 +7,15 @@
   flex-direction: row;
   box-shadow: 0 0 2px 0 rgb(21, 24, 22);
   user-select: none;
+  align-items: center;
 }
 
 .chat_header {
-  height: 100%;
-  width: 100%;
-  display: none;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
-.chatlist_header {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.profile_header {
+  justify-content: space-between;
 }
 
 .button {
@@ -143,6 +135,14 @@
 
 .companion_logo {
   fill: currentColor;
+}
+
+.button_tick {
+  background: url('https://icon-library.net/images/check-mark-icon-transparent-background/check-mark-icon-transparent-background-21.jpg');
+  background-size: 100% 100%;
+  height: 100%;
+  opacity: 0.25;
+  transition-duration: 0.15s;
 }
 
 @keyframes button-hover-animation {

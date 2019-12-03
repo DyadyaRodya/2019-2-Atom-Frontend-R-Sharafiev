@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import ChatElement from './ChatElement';
 import styles from '../styles/chatListStyles.module.css';
 
@@ -7,7 +6,6 @@ const chatsArrayKey = 'chatsArray';
 
 export default function ChatList(props) {
 	let chatCount = 0;
-	const displayArray = [{ display: 'flex' }, { display: 'none' }];
 	const [chats, setChats] = useState(chatsInit());
 	const chatlistRef = React.createRef();
 
@@ -33,7 +31,6 @@ export default function ChatList(props) {
 			lastmessageText,
 			lastmessageTime,
 			companionName: chatObj.companion,
-			onClickFunc: props.openChatFunc,
 		};
 
 		return chatElemProps;
@@ -97,7 +94,6 @@ export default function ChatList(props) {
 					lastmessageText={chatElemProps.lastmessageText}
 					lastmessageTime={chatElemProps.lastmessageTime}
 					companionName={chatElemProps.companionName}
-					onClickFunc={chatElemProps.onClickFunc}
 				/>,
 			),
 		);
@@ -116,7 +112,6 @@ export default function ChatList(props) {
 		<div
 			ref={chatlistRef}
 			className={styles.chats_list}
-			style={displayArray[props.isChatOpen]}
 		>
 			{chats}
 			<button
@@ -127,8 +122,3 @@ export default function ChatList(props) {
 		</div>
 	);
 }
-
-ChatList.propTypes = {
-	isChatOpen: PropTypes.number.isRequired,
-	openChatFunc: PropTypes.func.isRequired,
-};

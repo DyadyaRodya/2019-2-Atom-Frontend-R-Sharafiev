@@ -6,6 +6,8 @@
   cursor: pointer;
   transition-duration: 0.2s;
   background-color: #c0c9ea;
+  text-decoration: none;
+	color: inherit;
 }
 .chat_elem:hover {
   background-color: #bfb9e5;

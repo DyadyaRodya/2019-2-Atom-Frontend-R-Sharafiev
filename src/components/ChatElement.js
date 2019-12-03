@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from '../styles/chatElemStyles.module.css';
 
@@ -21,12 +22,7 @@ indicateArray[2] = (
 
 export default function ChatElement(props) {
 	return (
-		<div
-			id={props.id}
-			className={styles.chat_elem}
-			role="button"
-			onClick={props.onClickFunc}
-		>
+		<Link to={`/chat_id=${props.id}`} className={styles.chat_elem}>
 			<div className={styles.companion_img}/>
 			<div className={styles.text_info}>
 				<div className={styles.message_preview}>
@@ -44,12 +40,11 @@ export default function ChatElement(props) {
 					</div>
 				</div>
 			</div>
-		</div>
+		</Link>
 	);
 }
 
 ChatElement.propTypes = {
-	onClickFunc: PropTypes.func.isRequired,
 	id: PropTypes.number.isRequired,
 	indicator: PropTypes.number.isRequired,
 	lastmessageText: PropTypes.string.isRequired,
