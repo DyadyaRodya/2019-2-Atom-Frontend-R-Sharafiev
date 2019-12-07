@@ -8,7 +8,7 @@ export default function Profile(props) {
 
 	function handleInvalid(event) {
 		event.target.setCustomValidity(
-			'Username should only contain at least 5 lowercase letters and digits. e.g. john123',
+			'Никнейм должен содержать минимум 5 символов: латинские буквы в нижнем регистре и цифры (например, john123).',
 		);
 	}
 
@@ -24,13 +24,13 @@ export default function Profile(props) {
 			<div
 				className={`${styles.profile_input_div} ${styles.fullname_input_div}`}
 			>
-				<span className={styles.field_info}>Full name</span>
+				<span className={styles.field_info}>Полное имя</span>
 				<input className={styles.profile_input} />
 			</div>
 			<div
 				className={`${styles.profile_input_div} ${styles.username_input_div}`}
 			>
-				<span className={styles.field_info}>Username</span>
+				<span className={styles.field_info}>Никнейм</span>
 				<input
 					className={styles.profile_input}
 					pattern="^[a-z][a-z0-9-_\.]{4,20}$"
@@ -40,7 +40,7 @@ export default function Profile(props) {
 			<div
 				className={`${styles.profile_input_div} ${styles.biography_input_div}`}
 			>
-				<span className={styles.field_info}>Bio</span>
+				<span className={styles.field_info}>О себе</span>
 				<textarea className={styles.profile_input} />
 			</div>
 		</form>
