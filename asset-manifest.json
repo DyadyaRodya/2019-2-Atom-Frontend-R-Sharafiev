@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/css/main.7da5145f.chunk.css",
+    "main.js": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/js/main.9d0191bb.chunk.js",
+    "main.js.map": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/js/main.9d0191bb.chunk.js.map",
+    "runtime-main.js": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/js/runtime-main.64a80e02.js",
+    "runtime-main.js.map": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/js/runtime-main.64a80e02.js.map",
+    "static/js/2.d090a8f1.chunk.js": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/js/2.d090a8f1.chunk.js",
+    "static/js/2.d090a8f1.chunk.js.map": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/js/2.d090a8f1.chunk.js.map",
+    "index.html": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/index.html",
+    "precache-manifest.c0a08b7272329c289400b2b99203b9a9.js": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/precache-manifest.c0a08b7272329c289400b2b99203b9a9.js",
+    "service-worker.js": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/service-worker.js",
+    "static/css/main.7da5145f.chunk.css.map": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/css/main.7da5145f.chunk.css.map",
+    "static/media/attach_button.60f2012d.svg": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/media/attach_button.60f2012d.svg",
+    "static/media/audiorecordstart_button.d52bd5b7.svg": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/media/audiorecordstart_button.d52bd5b7.svg",
+    "static/media/audiorecordstop_button.1a57927e.svg": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/media/audiorecordstop_button.1a57927e.svg",
+    "static/media/geolocation_button.190de806.svg": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/media/geolocation_button.190de806.svg",
+    "static/media/submit_button.ba452dc7.svg": "//dyadyarodya.github.io/2019-2-Atom-Frontend-R-Sharafiev/static/media/submit_button.ba452dc7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64a80e02.js",
+    "static/js/2.d090a8f1.chunk.js",
+    "static/css/main.7da5145f.chunk.css",
+    "static/js/main.9d0191bb.chunk.js"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+	"short_name": "Atom Mail 2019 Uncle Rodya",
+	"name": "Atom Mail 2019 Uncle Rodya",
+	
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
