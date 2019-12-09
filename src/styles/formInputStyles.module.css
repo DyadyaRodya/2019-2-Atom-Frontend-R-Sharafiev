@@ -59,6 +59,7 @@
 }
 
 .attach_button_img {
+  pointer-events: none;
   height: 4vh;
   padding-top: 4px;
   fill: currentColor;

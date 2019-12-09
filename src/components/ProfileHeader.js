@@ -8,7 +8,7 @@ export default function ProfileHeader(props) {
 			<Link to="/" className={styles.button}>
 				<div className={`${styles.button_backward} ${styles.button}`} />
 			</Link>
-			<span className={styles.header}>Edit Profile</span>
+			<span className={styles.header}>Редактирование профиля</span>
 			<button type="submit" form="profile-form" className={styles.button}>
 				<div className={styles.button_tick} />
 			</button>

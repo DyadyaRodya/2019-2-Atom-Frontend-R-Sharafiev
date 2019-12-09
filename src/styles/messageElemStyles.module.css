@@ -12,6 +12,11 @@
   animation-duration: 0.5s;
 }
 
+.link {
+	display: inline;
+	font-size: 0.8em;
+}
+
 .message_text {
   color: black;
   font-size: calc(2vh + 10px);
@@ -46,7 +51,13 @@
   flex-shrink: 0;
   flex-grow: 0;
 }
-  
+
+.image {
+	max-height: 40vh;
+	max-width: 60vw;
+	margin: 1vh;
+}
+
 .sending {
   padding: 10px 15px;
   background: url('https://image.flaticon.com/icons/svg/19/19973.svg') no-repeat center center;
