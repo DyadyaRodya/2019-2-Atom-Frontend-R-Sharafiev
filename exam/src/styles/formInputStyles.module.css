@@ -1,0 +1,81 @@
+.form_input {
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding-left: 1vw;
+  border: 1px solid rgba(0, 0, 0, 0.133);
+}
+
+.input {
+  border: 0;
+  outline: none;
+  width: calc(100% - 2px);
+  font-size: 3vh;
+}
+
+.attach_button {
+  background-color: inherit;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  transition: 0.2s;
+  color: rgb(136, 136, 136);
+}
+.attach_button:focus {
+  color: rgba(136, 136, 136, 0.8);
+}
+.attach_button:hover {
+  color: rgba(136, 136, 136, 0.733);
+}
+.attach_button:active {
+  background: rgba(0, 0, 0, 0.133);
+}
+
+.submit_button {
+  display: none;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  color: rgb(12, 216, 189);
+  overflow: hidden;
+  animation-name: show-submit-button;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+}
+.submit_button:focus {
+  color: rgba(38, 68, 243, 0.8);
+}
+.submit_button:hover {
+  color: rgba(4, 38, 153, 0.733);
+}
+.submit_button:active {
+  background: rgba(0, 0, 0, 0.133);
+}
+
+.attach_button_img {
+  pointer-events: none;
+  height: 4vh;
+  padding-top: 4px;
+  fill: currentColor;
+}
+
+.submit_button_img {
+  height: 4vh;
+  padding-top: 4px;
+  fill: currentColor;
+}
+
+@keyframes show-submit-button {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 6vh;
+  }
+}
